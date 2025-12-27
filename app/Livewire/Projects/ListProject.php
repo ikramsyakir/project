@@ -3,8 +3,8 @@
 namespace App\Livewire\Projects;
 
 use App\Models\Project;
-use Livewire\Component;
 use Illuminate\View\View;
+use Livewire\Component;
 use Livewire\WithPagination;
 
 class ListProject extends Component

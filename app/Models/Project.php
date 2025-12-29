@@ -11,18 +11,18 @@ class Project extends Model
     /** @use HasFactory<ProjectFactory> */
     use HasFactory;
 
-    public const STATUS_ACTIVE = 'active';
+    const string STATUS_ACTIVE = 'active';
 
-    public const STATUS_COMPLETED = 'completed';
+    const string STATUS_COMPLETED = 'completed';
 
-    public const STATUS_PENDING = 'pending';
+    const string STATUS_PENDING = 'pending';
 
-    public const STATUS_ON_HOLD = 'on_hold';
+    const string STATUS_ON_HOLD = 'on_hold';
 
     protected $guarded = ['id'];
 
     /**
-     * Get label for the current status
+     * Get a label for the current status
      */
     public function statusLabel(): string
     {
